@@ -1,4 +1,7 @@
-all: hello tidy
+all: parse tidy
+
+parse: parse.hs
+	ghc -o parse --make parse.hs
 
 hello: first-steps.hs
 	ghc -o hello --make first-steps.hs
